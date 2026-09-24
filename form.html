@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <nav><!--Barra di navigazione-->
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+             <li>
+                <a href="chiSiamo.html">Chi siamo</a>
+            </li>
+        </ul>
+    </nav>
+    <h2>Homepage</h2><!--CAMPO OBBLIGATORIO AGGIUNGERE required-->
+    <form action="registrazione.php" method="post">
+        <fieldset>
+            <input type="text" name="Cognome" placeholder="Cognome"/>
+            <input type="text" name="nome" placeholder="nome"/>
+            <input type="Indirizzo" name="indirizzo" placeholder="via, numero civico, CAP"/>
+            <input type="citta" name="citta" placeholder="citta' di residenza"/>
+            <input type="email" name="email" placeholder="Email"/>
+            <label for="regione">Scegli la regione</label><br>
+        <select id="regione" name="regione">
+            <option value="Lombardia">Lombardia</option>
+            <option value="Marche">Marche</option>
+            <option value="Trentino Alto Adige">Trentino Alto Adige</option>
+            <option value="Piemonte">Piemonte</option>
+        </select><br>
+        </fieldset>
+        
+        <fieldset>
+        <label for="nascita">Data nascita</label><br>
+        <input type="date" name="nascita" min="1900-01-01" max="2025-01-01"/><br>
+        
+        <label for="m">Maschio</label>
+        <input type="radio" id="m" name="sesso" value="maschio"/><br>
+        <label for="f" id="f" name="femmina">Femmina</label>
+        <input type="radio" id="f" name="sesso" value="femmina"/><br>
+        </fieldset>
+        <label for="esperienza">Livello di esperienza nel settore</label><br>
+        <input type="range" name="esperienza" min="0" max="100" step="5" value="1" oninput="valore_esperienza.value=this.value"/>
+        <output id="valore_esperienza">1</output><br>
+        <label for="linguaggi" name="linguaggi">Quali linguaggi conosci?</label><br>
+        <label for="linguaggi" id="HTML" name="HTML">HTML</label>
+        <input type="checkbox" id="HTML" name="HTML">
+        <label for="linguaggi" id="CSS" name="CSS">CSS</label>
+        <input type="checkbox" name="CSS">
+        <label for="linguaggi" id="Javascript" name="Javascript">JAVASCRIPT</label>
+        <input type="checkbox" name="Javascript" ><br>
+        
+        <label for="curriculum">Carica il tuo curriculum</label><br>
+        <input type="file" name="curriculum" /><br>
+        <br><button type="submit">Invia dati</button>
+        <button type="reset">Cancella tutto</button>
+    </form>
+</body>
+</html>

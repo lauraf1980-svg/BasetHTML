@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+<!--auto close tag, auto rename tag, live server, color pike-->
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +8,88 @@
 </head>
 
 <body>
+    <div style="background-image: url('immagini/fiore.jpg');
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background-size:cover; 
+    background-position: center;
+    z-index: -1;
+    filter: blur(8px);">
+    </div>
     <!--commento!!
     Tag di formattazione del testo
     link
     immagini
     -->
-    <h1>Base HTML</h1>
+    <h1 style="color: mediumslateblue;">Base HTML</h1>
     <h3>Classe 5F ITT</h3>
     <h2>A/S 2026/27</h2>
 
     <p>
-        <strong style="color: red; background-color: chartreuse;" >Lorem ipsum</strong>  dolor sit amet, <br><em>consectetur adipisicing</em> elit. 
-Saepe consequuntur reiciendis magni molestiae, ducimus,
-iste at sint <small><strong>dfghjcvb odio,</strong> </small> sapiente harum voluptas <br>
-quam eligendi assumenda rem! Eveniet, excepturi
-reprehenderit.
-    </p>
+        <strong style="color: red; background-color: chartreuse;">Lorem ipsum</strong> dolor sit amet,
+        <br><em>consectetur adipisicing</em> elit.
+        Saepe consequuntur reiciendis magni molestiae, ducimus,
+        iste at sint <small><strong>dfghjcvb odio,</strong> </small> sapiente harum voluptas <br>
+        quam eligendi assumenda rem! Eveniet, excepturi
+        reprehenderit.
+        <hr>
+    </p><!--alt + z-->
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.</p>
+    <!--LINK INTERNI, LINK ESTERNI E LINK DI PAGINA
+    -->
     <a href="https://www.google.it" target="_blank">Cerca in Google</a><br>
+    <a href="/chiSiamo.html"> clicca su Altra pagina sito</a><br>
+    <a href="#ultima">Vai all'ultima sezione</a><br>
+    <a href="mailto:info@mailSitoWeb.com">Scrivici una mail</a><br>
+<!--duplicare shift alt freccia giu-->
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem!<br> Eveniet, excepturi reprehenderit.</p>
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem!<br> Eveniet, excepturi reprehenderit.</p>
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem!<br> Eveniet, excepturi reprehenderit.</p>
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem!<br> Eveniet, excepturi reprehenderit.</p>
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem!<br> Eveniet, excepturi reprehenderit.</p>
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem!<br> Eveniet, excepturi reprehenderit.</p>
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem!<br> Eveniet, excepturi reprehenderit.</p>
+    <p>asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem! Eveniet,
+        excepturi reprehenderit.quam eligendi assumenda rem!<br> Eveniet, excepturi reprehenderit.</p>
+    <h2>ULtima Sezione</h2>
+    <p id="ultima">asdfghjk quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.quam eligendi assumenda rem!
+        Eveniet, excepturi reprehenderit.<br> quam eligendi assumenda rem! Eveniet, excepturi reprehenderit.</p>
+    <!--
+     tag <img> è un tag autochiudente e si basa su attributi chiave:
+
+    src: Il percorso del file (relativo o URL assoluto).
+
+    alt: Testo alternativo per l'accessibilità e se l'immagine non carica.
+
+    width / height per la dimensione.
+
+    Immagine di sfondo CSS: Spiega che usando l'attributo style="background-image: url('...'); 
+    background-size: cover;" sul <body> o su un contenitore, lo sfondo diventa un'immagine   
+        -->
     <img src="immagini/fiore.jpg" width="150" height="200" alt="Fiore colorato"><br>
 
+    <!--INSERIRE UN AUDIO E UN VIDEO-->
+    <audio controls>
+        <source src="" type="audio">
+    </audio>
+    <video width="300" height="250">
+        <source src="/audio_video/" type="video/mp4">
+    </video>
+
+<!-- WhatsApp con numero e messaggio preimpostato -->
+<a href="https://wa.me/393331234567?text=Ciao%20ho%20bisogno%20di%20aiuto">Contattaci su WhatsApp</a>
+
+<!-- Telegram (Username) -->
+<a href="https://t.me/nome_utente">Scrivimi su Telegram</a>
 </body>
 
 </html>
